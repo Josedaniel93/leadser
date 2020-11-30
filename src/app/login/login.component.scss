@@ -1,0 +1,121 @@
+
+.left{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 765px;
+  height: 1080px;
+  background: var(--unnamed-color-282672) 0% 0% no-repeat padding-box;
+  background: #282672 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.main{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  background: var(--unnamed-color-1b1464) 0% 0% no-repeat padding-box;
+  background: #1B1464 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+h3{
+  position: absolute;
+  top: 50px;
+  left: 139px;
+  width: 150px;
+  height: 43px;
+  font: var(--unnamed-font-style-normal) normal 800 var(--unnamed-font-size-35)/var(--unnamed-line-spacing-42) var(--unnamed-font-family-montserratalternates-extrabold);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal 800 35px/42px MontserratAlternates-ExtraBold;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+h1{
+  position: absolute;
+  top: 278px;
+  left: 223px;
+  width: 300px;
+  height: 71px;
+  font: var(--unnamed-font-style-normal) normal 800 var(--unnamed-font-size-58)/69.6px var(--unnamed-font-family-montserratalternates-extrabold);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal 800 58px/70px MontserratAlternates-ExtraBold;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.mail{
+  position: absolute;
+  top: 400px;
+  left: 160px;
+  width: 444px;
+  height: 64px;
+  border: 1px solid var(--unnamed-color-21dad7);
+  border: 1px solid #21DAD7;
+  border-radius: 13px;
+  opacity: 1;
+}
+.pass{
+  position: absolute;
+  top: 504px;
+  left: 160px;
+  width: 444px;
+  height: 64px;
+  border: 1px solid var(--unnamed-color-21dad7);
+  border: 1px solid #21DAD7;
+  border-radius: 13px;
+  opacity: 1;
+}
+.remember{
+  position: absolute;
+  top: 585px;
+  left: 176px;
+  width: 24px;
+  height: 24px;
+  //background: transparent url('img/check-square-solid.png') 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  opacity: 1;
+}
+.rememberText{
+  position: absolute;
+  top: 582px;
+  left: 215px;
+  width: 129px;
+  height: 27px;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.forgot{
+  position: absolute;
+  top: 582px;
+  left: 450px;
+  width: 157px;
+  height: 27px;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  text-decoration: underline;
+  letter-spacing: 0px
+}
+
+button{
+  position: absolute;
+  top: 646px;
+  left: 262px;
+  width: 239px;
+  height: 71px;
+  background: var(--unnamed-color-21dad7) 0% 0% no-repeat padding-box;
+  background: #21DAD7 0% 0% no-repeat padding-box;
+  box-shadow: 0px 8px 25px #16114B;
+  border-radius: 23px;
+  opacity: 1;
+}
