@@ -1,0 +1,12 @@
+#General
+
+- Cambiar que cuando entres al dominio, la primera página que aparezca sea el login
+
+#login
+
+- La columna del formulario, más pequeña. 
+- Los inputs no deberían ser los que tengan los margenes si no la caja que les envuelve, en este caso, la columna.
+- Si se le añade a los inputs un width, se omite la anchura de la caja padre y por tanto, no acopla con su tamaño
+- Quitar el margin a los elementos P de checkbox, así como sus margenes.
+- ¿Serias capaz de en la parte de "Don't have an account" utilizar solo una columna para ambos textos y que quede bien?
+
