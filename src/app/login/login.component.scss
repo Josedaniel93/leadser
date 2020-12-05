@@ -1,9 +1,4 @@
 
- @font-face {
-  font-family: montserrat;
-  src: url('../../assets/fonts/MontserratAlternates-ExtraBold.ttf');
-}
-
 
 #main{
 
@@ -30,35 +25,51 @@
             color: white;
             text-align: center;
           }
+          .form-item{
+            margin: 10px 0px;
+          }
           .mail{
-            width: 444px;
             height: 64px;
             border: 1px solid #21DAD7;
             border-radius: 13px;
-            margin: 10px 0px;
+            background: #282672;
           }
           .pass{
-            width: 444px;
             height: 64px;
             border: 1px solid #21DAD7;
             border-radius: 13px;
-            margin: 10px 0px;
+            background: #282672;
           }
-
+          .icon{
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: grey;
+            font-size: 25px;
+          }
+          .icon:hover{
+            color: white;
+          }
           .form-remember{
             display: inline-flex;
-            .remember{
+            .remember-check{
               width: 24px;
               height: 24px;
-              margin: 10px ;
+            }
+            .remember-text{
+              margin-left: 10px;
             }
           }
           .form-button{
             text-align: center;
             margin: 30px 0px;
           }
-          .form-sign{
-            margin: 10px 0px;
+          .form-signup{
+            display: inline-flex;
+            justify-content: center;
+            a{
+              color: #21DAD7;
+            }
           }
         }
       }
@@ -68,13 +79,12 @@
       p{
         font-family: montserrat;
         color: white;
-        margin: 10px 0px;
+        margin: 0px;
       }
       a{
         font-family: montserrat;
         color: white;
         text-align: center;
-        margin: 10px 0px;
       }
       button{
         width: 239px;

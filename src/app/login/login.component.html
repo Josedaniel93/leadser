@@ -1,7 +1,7 @@
 <div id="main">
   <div class="container-fluid">
     <div class="row expand">
-      <div class="col-6 main-log">
+      <div class="col-4 main-log">
         <div class="row">
           <div class="col offset-2">
             <h3 class="form-title">Leadser</h3>
@@ -14,17 +14,19 @@
                 <div class="col">
                   <h1 class="form-second-title">Welcome</h1>
                 </div>
-                <div class="col">
-                  <input type="text" placeholder="Email" class="mail form-control" >
+                <div class="col form-item">
+                  <input type="email" placeholder="Email" class="mail form-control" >
                 </div>
-                <div class="col">
-                  <input type="text" placeholder="Password" class="pass form-control">
+                <div class="col form-item">
+                  <input [type]="!show ? 'password' : 'text'" placeholder="Password" class="pass form-control">
+                  <i [class]="!show ? 'far fa-eye-slash icon' : 'far fa-eye icon'" (click)="showPassword()" ></i>
+
                 </div>
-                <div class="col">
+                <div class="col form-item">
                   <div class="row">
                     <div class="col form-remember">
-                      <input type="checkbox" class="remember">
-                      <p class="rememberText">Remember me</p>
+                      <input type="checkbox" class="remember-check">
+                      <p class="remember-text">Remember me</p>
                     </div>
                     <div class="col form-remember">
                       <a href="URI" class="forgot">Forgot password?</a>
@@ -34,15 +36,9 @@
                 <div class="col form-button">
                   <button type="button">Login</button>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
+                <div class="col form-signup">
                       <p>Don't have an acount?</p>
-                    </div>
-                    <div class="col">
-                      <a href="URI" class="form-sign">Sign up</a>
-                    </div>
-                  </div>
+                      <a href="URI" class="ml-2">Sign up</a>
                 </div>
               </div>
             </form>
@@ -53,3 +49,6 @@
     </div>
   </div>
 </div>
+<!--
+
+<i class="far fa-eye icon" (click)="showPassword()" *ngIf="show"></i> -->
