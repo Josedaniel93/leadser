@@ -15,10 +15,10 @@
                   <h1 class="form-second-title">Welcome</h1>
                 </div>
                 <div class="col form-item">
-                  <input type="email" placeholder="Email" class="mail form-control" >
+                  <input type="email" placeholder="Email" class="mail form-control" [(ngModel)]="loginObject.email"  >
                 </div>
                 <div class="col form-item">
-                  <input [type]="!show ? 'password' : 'text'" placeholder="Password" class="pass form-control">
+                  <input [type]="!show ? 'password' : 'text'" placeholder="Password" class="pass form-control" [(ngModel)]="loginObject.password">
                   <i class="far icon" [ngClass]="!show ? 'fa-eye-slash' : ' fa-eye '" (click)="showPassword()" ></i>
                 </div>
                 <div class="col form-item">
@@ -33,7 +33,7 @@
                   </div>
                 </div>
                 <div class="col form-button">
-                  <button type="button">Login</button>
+                  <button type="button" (click)="login()">Login</button>
                 </div>
                 <div class="col form-signup">
                       <p>Don't have an acount?</p>
