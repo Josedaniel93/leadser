@@ -1,0 +1,24 @@
+.progress-bar {
+    border: 1px solid white;
+    border-radius: 14px;
+    background-color: #00000078;
+ } 
+ 
+ .progress-bar > div {
+    color: white;
+    background: rgb(29, 178, 245);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0px 20px;
+    border-radius: 10px;
+    -webkit-animation: progress-bar 2s;
+    -moz-animation: progress-bar 2s;
+ } 
+ 
+ @-webkit-keyframes progress-bar {
+   0% { width: 0; }
+ } 
+ 
+ @-moz-keyframes progress-bar {
+    0% { width: 0; }
+ }

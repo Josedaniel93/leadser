@@ -1,3 +1,5 @@
+import { MainModule } from './main/main.module';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,17 +9,25 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { MainComponent } from './main/main.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    MainComponent
+
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    MainModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

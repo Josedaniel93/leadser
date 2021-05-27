@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-8 title">
+    <h3>{{title}}</h3>
+  </div>
+  <div class="col-4">
+    <dx-select-box [dataSource]="options" (onValueChanged)="checkForData($event)"></dx-select-box>
+  </div>
+  <div class="dx-field">
+    <div class="dx-field-value">
+      <dx-drop-down-button text="Selecciona año" [dropDownOptions]="{ width: 230 }" icon="far fa-calendar-alt"
+        [items]="options"></dx-drop-down-button>
+    </div>
+  </div>
+</div>

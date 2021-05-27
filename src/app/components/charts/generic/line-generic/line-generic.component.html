@@ -1,0 +1,15 @@
+<dx-chart palette="green" [dataSource]="dataSource">
+    <dxi-series valueField="total" name="total"></dxi-series>
+    <dxo-legend [visible]="false"></dxo-legend>
+    <dxo-common-series-settings #seriesSettings argumentField="date" type="line">
+    </dxo-common-series-settings>
+    <dxo-margin [bottom]="20"></dxo-margin>
+    <dxo-common-axis-settings>
+        <dxo-grid [visible]="true"></dxo-grid>
+    </dxo-common-axis-settings>
+    <dxo-argument-axis [allowDecimals]="false" [axisDivisionFactor]="60">
+        <dxo-label>
+            <dxo-format type="decimal"></dxo-format>
+        </dxo-label>
+    </dxo-argument-axis>
+</dx-chart>

@@ -5,7 +5,7 @@ import { Login } from '../models/login.interface';
   providedIn: 'root',
 })
 export class LoginService {
-  constructor() {}
+  constructor() { }
 
   tryLogin(loginObject: Login): boolean {
     if (loginObject.password == '1234' && loginObject.email == '1234') {
@@ -13,4 +13,5 @@ export class LoginService {
     }
     return false;
   }
+
 }

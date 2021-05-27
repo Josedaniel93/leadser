@@ -1,0 +1,10 @@
+<dx-chart id="chart" [rotated]="false" [dataSource]="usersApp">
+
+  <dxi-series valueField="data" name="people"></dxi-series>
+
+  <dxo-common-series-settings argumentField="type" type="bar" [ignoreEmptyPoints]="true">
+  </dxo-common-series-settings>
+  <dxo-legend verticalAlignment="bottom" horizontalAlignment="center">
+  </dxo-legend>
+  <dxo-export [enabled]="true"></dxo-export>
+</dx-chart>

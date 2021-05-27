@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col position">
+        {{position}}
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <img [src]="item?.img">
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="name">{{item?.name}}</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col value">
+        <div>{{item?.value | number}}€</div>
+    </div>
+</div>

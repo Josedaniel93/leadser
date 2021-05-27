@@ -1,0 +1,47 @@
+.vertical-menu {
+  position: absolute;
+  width: 90px;
+  height: 100vh;
+  background-color: #1B1464;
+  padding-top: 30vh;
+  top: 0px;
+  left: 0px;
+
+  /* Set a width if you like */
+}
+
+.info {
+  position: relative;
+}
+
+.vertical-menu a {
+  background-color: #1B1464;
+  /* Grey background color */
+  color: black;
+  /* Black text color */
+  display: block;
+  /* Make the links appear below each other */
+  padding: 12px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove underline from links */
+  color: white;
+}
+
+.vertical-menu a:hover {
+  background-color: #1B1464;
+  /* Dark grey background on mouse-over */
+  color: white;
+}
+
+.vertical-menu a.active {
+  background-color: #1B1464;
+  /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+i {
+  margin: 10px 30px;
+  height: 20px;
+  color: white;
+}
