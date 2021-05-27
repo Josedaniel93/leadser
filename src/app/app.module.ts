@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
-import { MainComponent } from './main/main.component';
+
 
 
 
