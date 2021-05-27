@@ -10,6 +10,11 @@ import { FormsModule } from '@angular/forms';
 import { DxChartModule, DxDropDownButtonModule, DxSelectBoxModule } from 'devextreme-angular';
 import { LineGenericComponent } from '../components/charts/generic/line-generic/line-generic.component';
 import { CommonModule } from '@angular/common';
+import { BusinessComponent } from './components/business/business.component';
+import { WorkersComponent } from './components/workers/workers.component';
+import { CallsComponent } from './components/calls/calls.component';
+import { TrainingComponent } from './components/training/training.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 
@@ -19,6 +24,11 @@ import { CommonModule } from '@angular/common';
     HeaderWithSelectComponent,
     SalesTimeComponent,
     MainComponent,
+    BusinessComponent,
+    WorkersComponent,
+    CallsComponent,
+    TrainingComponent,
+    ProfileComponent,
   ],
   imports: [
     MainRoutingModule,
