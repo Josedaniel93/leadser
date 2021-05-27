@@ -1,4 +1,3 @@
-import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -6,7 +5,10 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
 
   { path: 'login', component: LoginComponent },
-  { path: 'main', component: MainComponent },
+  {
+    path: 'main',
+    loadChildren: () => import('./main/main.module').then(m => m.MainModule)
+  },
   { path: '**', redirectTo: 'login', pathMatch: 'full' }
 ];
 
