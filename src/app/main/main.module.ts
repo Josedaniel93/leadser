@@ -1,7 +1,7 @@
 import { MainRoutingModule } from './main-routing.module';
-import { RouterModule } from '@angular/router';
+
 import { MainComponent } from './main.component';
-import { SalesTimeComponent } from './../components/charts/partners-workers/sales-time/sales-time.component';
+import { SalesTimeComponent } from './../components/charts/partners-business/sales-time/sales-time.component';
 import { HeaderWithSelectComponent } from './../components/charts/generic/header-with-select/header-with-select.component';
 
 import { NgModule } from '@angular/core';

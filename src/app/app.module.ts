@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { MainModule } from './main/main.module';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -22,12 +24,13 @@ import { FormsModule } from '@angular/forms';
 
   ],
   imports: [
+    RouterModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
     MainModule,
-
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

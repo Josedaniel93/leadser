@@ -13,19 +13,25 @@ export class LoginComponent implements OnInit {
   loginObject: Login;
   constructor(private loginService: LoginService, private router: Router) {
     this.show = false;
-    this.loginObject = {email:'',password:''}
-   }
+    this.loginObject = { email: '', password: '' }
+  }
 
   ngOnInit(): void {
   }
-  showPassword(){
+  showPassword() {
     this.show = !this.show;
   }
-  login(){
-    if(this.loginService.tryLogin(this.loginObject)){
-      this.router.navigate(['/main']);
-    }else{
-      // TODO ERROR MSG
+  async login() {
+    let data = (await this.loginService.login(this.loginObject))
+    if (data.result != 'false') {
+      if (data.role === 'Admin') {
+        this.router.navigate(['/business']);
+      } else {
+        this.router.navigate(['/workers']);
+      }
+
+    } else {
+      console.log('Incorrect user')
     }
   }
 }
