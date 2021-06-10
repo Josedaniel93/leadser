@@ -1,47 +1,81 @@
-.vertical-menu {
-  position: fixed;
-  width: 90px;
-  height: 100vh;
-  background-color: #1B1464;
-  padding-top: 30vh;
-  top: 0px;
-  left: 0px;
+#main {
 
-  /* Set a width if you like */
-}
 
-.info {
-  position: relative;
-}
+  .vertical-menu {
+    position: fixed;
+    width: 70px;
+    height: 100vh;
+    background-color: #1B1464;
+    padding-top: 30vh;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
 
-.vertical-menu a {
-  background-color: #1B1464;
-  /* Grey background color */
-  color: black;
-  /* Black text color */
-  display: block;
-  /* Make the links appear below each other */
-  padding: 12px;
-  /* Add some padding */
-  text-decoration: none;
-  /* Remove underline from links */
-  color: white;
-}
+    .info {
+      position: relative;
+    }
+  }
 
-.vertical-menu a:hover {
-  background-color: #1B1464;
-  /* Dark grey background on mouse-over */
-  color: white;
-}
+  .vertical-menu a {
+    background-color: #1B1464;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+  }
 
-.vertical-menu a.active {
-  background-color: #1B1464;
-  /* Add a green color to the "active/current" link */
-  color: white;
-}
+  .vertical-menu a:hover {
+    background-color: #1B1464;
+    color: white;
+  }
 
-i {
-  margin: 10px 30px;
-  height: 20px;
-  color: white;
+  .vertical-menu a.active {
+    background-color: #1B1464;
+    color: white;
+  }
+
+
+
+  .horizontal-menu {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #b6b6b6;
+    padding-top: 5px;
+    top: 0px;
+    left: 0px;
+
+    .user {
+      height: 40px;
+      width: 40px;
+    }
+
+    .logo {
+      margin: 5px 0px 0px 90px;
+      color: white;
+      font-family: 'montserrat';
+      font-size: 1.2rem;
+
+    }
+
+    .username {
+      color: white;
+      font-family: 'montserrat';
+      font-size: 0.7rem;
+    }
+
+  }
+
+  i {
+    margin: 12px 30px;
+    height: 20px;
+    color: white;
+  }
+
+  .main {
+    margin-top: 70px;
+    margin-left: 90px;
+  }
+
 }

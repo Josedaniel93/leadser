@@ -1,17 +1,24 @@
-<div class="container-fluid">
+<div id="main" class="container-fluid">
   <div class="row">
-    <div class="col-1">
-      <div class="vertical-menu">
-        <div class="info">
-          <a href="#" class="active">Home</a>
-          <i class="fas fa-user"></i>
-          <i class="far fa-chart-bar"></i>
-          <i class="fas fa-phone-square-alt"></i>
-          <i class="fas fa-cog"></i>
-        </div>
+    <div class="vertical-menu">
+      <div class="info">
+        <a href="#" class="active" (click)="logOut()">Home</a>
+        <i class="fas fa-user" (click)="logOut()"><a href="#"></a></i>
+        <i class="far fa-chart-bar" (click)="logOut()"></i>
+        <i class="fas fa-phone-square-alt" (click)="logOut()"></i>
+        <i class="fas fa-cog" (click)="logOut()"></i>
       </div>
     </div>
-    <div class="col">
+    <div class="horizontal-menu ">
+      <div class="row">
+        <div class="col-8 logo">{{this.title}}</div>
+        <div class="col-2 username">
+          <img src="../../assets/img/user.png" class="user"> Jose Daniel
+        </div>
+        <div class="col-1 p-0" (click)="logOut()"><i class="fas fa-sign-out-alt "> EXIT</i></div>
+      </div>
+    </div>
+    <div class="col main">
       <router-outlet></router-outlet>
     </div>
   </div>
