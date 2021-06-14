@@ -1,16 +1,19 @@
 <div class="container-fluid" id="business">
   <div class="row mt-3">
     <div class="col-12 ">
-      <select class="form-select" aria-label="Default select example" [(ngModel)]="action">
+      <select class="form-select" aria-label="Seleciona año" [(ngModel)]="action">
+        <!-- ngFor its a structural directive that renders a template for each item in a collection options
+              We can even declare a index and use each item declaring option  -->
         <option *ngFor="let option of options; index as i;" name={{i}}>{{option}}</option>
       </select>
     </div>
   </div>
   <div class="row mt-3">
+    <!-- ngIf is a structural directive that conditionally includes a template based on the value of an expression
+      in this case action, we can compare strings or use boolean-->
     <div *ngIf="action == 'createWorker'" class="col-12 ">
       <form [formGroup]="generateWorkerUserForm" class="h-100">
-
-        <div formGroupName="businessDataForm" class="row align-content-center ">
+        <div class="row align-content-center ">
           <div class="col-7 mt-5">
             <label class="subtitle">Informacion requerida Workers</label>
           </div>
@@ -31,7 +34,7 @@
     <div *ngIf="action == 'createBusiness'" class="col-12 ">
       <form [formGroup]="generateBusinessUserForm" class="h-100">
 
-        <div formGroupName="businessDataForm" class="row align-content-center ">
+        <div class="row align-content-center ">
           <div class="col-7 mt-5">
             <label class="subtitle">Informacion requerida Business</label>
           </div>

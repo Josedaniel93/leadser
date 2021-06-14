@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   loginObject: Login;
   constructor(private loginService: LoginService, private router: Router) {
     this.show = false;
-    this.loginObject = { email: '', password: '' }
+    this.loginObject = { email: '', password: '', role: '' }
   }
 
   ngOnInit(): void {
@@ -25,9 +25,11 @@ export class LoginComponent implements OnInit {
     let data = (await this.loginService.login(this.loginObject))
     if (data.result != 'false') {
       if (data.role === 'Admin') {
-        this.router.navigate(['/business']);
+        this.router.navigate(['/main/admin']);
+      } else if (data.role === 'Business') {
+        this.router.navigate(['/main/business']);
       } else {
-        this.router.navigate(['/workers']);
+        this.router.navigate(['/main/workers']);
       }
 
     } else {

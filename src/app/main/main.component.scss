@@ -9,31 +9,33 @@
     padding-top: 30vh;
     top: 0px;
     left: 0px;
-    z-index: 10;
+    z-index: 50;
 
     .info {
       position: relative;
     }
+
+    a {
+      background-color: #1B1464;
+      color: black;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+      color: white;
+
+    }
+
+    &:hover {
+      background-color: #1B1464;
+      color: white;
+    }
+
+    &.active {
+      background-color: #1B1464;
+      color: white;
+    }
   }
 
-  .vertical-menu a {
-    background-color: #1B1464;
-    color: black;
-    display: block;
-    padding: 12px;
-    text-decoration: none;
-    color: white;
-  }
-
-  .vertical-menu a:hover {
-    background-color: #1B1464;
-    color: white;
-  }
-
-  .vertical-menu a.active {
-    background-color: #1B1464;
-    color: white;
-  }
 
 
 
@@ -45,6 +47,7 @@
     padding-top: 5px;
     top: 0px;
     left: 0px;
+    z-index: 49;
 
     .user {
       height: 40px;
@@ -74,8 +77,10 @@
   }
 
   .main {
-    margin-top: 70px;
-    margin-left: 90px;
+    margin-top: 50px;
+    margin-left: 70px;
+    padding: 0px;
+    height: 95vh !important;
   }
 
 }

@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 
 
@@ -18,10 +19,6 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     LoginComponent,
-
-
-
-
   ],
   imports: [
     RouterModule,
@@ -31,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     MainModule,
     HttpClientModule,
+    YouTubePlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

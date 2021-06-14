@@ -1,0 +1,38 @@
+<div class="container-fluid" id="formation">
+  <div class="h-100 row">
+    <div class="col-2 items">
+      <div class="row align-content-center justify-content-center mt-2">
+        <div class="col-12 mt-3 form-group">
+          <div class="row align-content-center justify-content-center" (click)="selectOption('telecomunicaciones')">
+            <label>-Telecomunicaciones<span class="required"></span></label>
+          </div>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <div class="row align-content-center justify-content-center" (click)="selectOption('seguros')">
+            <label>-Seguros<span class="required"></span></label>
+          </div>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <div class="row align-content-center justify-content-center" (click)="selectOption('banca')">
+            <label>-Banca<span class="required"></span></label>
+          </div>
+        </div>
+        <div class="col-12 mt-3 form-group ">
+          <div class="row align-content-center justify-content-center" (click)="selectOption('dataFarm')">
+            <label>-Recopilacion de datos<span class="required"></span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 videos pb-5">
+      <div class="row align-content-center justify-content-center mt-5">
+        <youtube-player videoId="{{video}}" suggestedQuality="highres" [height]="500" [width]="1000" [startSeconds]="0">
+        </youtube-player>
+      </div>
+      <div class="row align-content-center justify-content-center mt-5">
+        <button type="button" class="btn btn-primary mr-3 mt-2" (click)="goBack()">Anterior</button>
+        <button type="button" class="btn btn-primary mr-3 mt-2" (click)="goNext()">Siguiente</button>
+      </div>
+    </div>
+  </div>
+</div>

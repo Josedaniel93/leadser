@@ -1,4 +1,6 @@
+import { TopWorkersData } from './models/top-workersmodel';
 import { Component, OnInit } from '@angular/core';
+import { TopWorkersService } from './service/top-workers.service';
 
 @Component({
   selector: 'app-top-workers',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopWorkersComponent implements OnInit {
 
-  constructor() { }
+  dataSource: TopWorkersData[];
+  options: any[];
+  title: string;
+  actionCheckForData = this.checkForData.bind(this);
 
-  ngOnInit(): void {
+  constructor(private topWorkersService: TopWorkersService) {
+    this.dataSource = [];
+    this.options = ["2018", "2019", "2020"]
+    this.title = "Top vendedores"
   }
 
+  ngOnInit(): void {
+
+    this.topWorkersService.maxUsersAppSubscription.subscribe(result => this.dataSource = result);
+    this.checkForData({ value: "2020" });
+
+  }
+
+  checkForData(event: any) {
+
+    this.topWorkersService.getData(event.value);
+
+  }
 }

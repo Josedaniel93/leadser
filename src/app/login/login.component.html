@@ -9,40 +9,45 @@
         </div>
         <div class="row form-group">
           <div class="col-8 ">
-              <div class="row flex-column ">
-                <div class="col">
-                  <h1 class="form-second-title">Welcome</h1>
-                </div>
-                <div class="col form-item">
-                  <input type="email" placeholder="Email" class="mail form-control" [(ngModel)]="loginObject.email"  >
-                </div>
-                <div class="col form-item">
-                  <input [type]="!show ? 'password' : 'text'" placeholder="Password" class="pass form-control" [(ngModel)]="loginObject.password">
-                  <i class="far icon" [ngClass]="!show ? 'fa-eye-slash' : ' fa-eye '" (click)="showPassword()" ></i>
-                </div>
-                <div class="col form-item">
-                  <div class="row">
-                    <div class="col form-remember">
-                      <input type="checkbox" class="remember-check">
-                      <p class="remember-text">Remember me</p>
-                    </div>
-                    <div class="col form-remember">
-                      <a href="URI" class="forgot">Forgot password?</a>
-                    </div>
+            <div class="row flex-column ">
+              <div class="col">
+                <h1 class="form-second-title">Welcome</h1>
+              </div>
+              <div class="col form-item">
+                <input type="email" placeholder="Email" class="mail form-control" [(ngModel)]="loginObject.email">
+              </div>
+              <div class="col form-item">
+                <input [type]="!show ? 'password' : 'text'" placeholder="Password" class="pass form-control"
+                  [(ngModel)]="loginObject.password">
+                <i class="far icon" [ngClass]="!show ? 'fa-eye-slash' : ' fa-eye '" (click)="showPassword()"></i>
+              </div>
+              <div class="col form-item">
+                <div class="row">
+                  <div class="col form-remember">
+                    <input type="checkbox" class="remember-check">
+                    <p class="remember-text">Remember me</p>
+                  </div>
+                  <div class="col form-remember">
+                    <a href="URI" class="forgot">Forgot password?</a>
                   </div>
                 </div>
-                <div class="col form-button">
-                  <button type="button" (click)="login()">Login</button>
-                </div>
-                <div class="col form-signup">
-                      <p>Don't have an acount?</p>
-                      <a href="URI" class="ml-2">Sign up</a>
-                </div>
               </div>
+              <div class="col form-button">
+                <button type="button" (click)="login()">Login</button>
+              </div>
+              <div class="col form-signup">
+                <p>Don't have an acount?</p>
+                <a href="URI" class="ml-2">Sign up</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col back-log"></div>
+      <div class="col back-log">
+        <div class="row justify-content-center align-content-center">
+          <img src="../../assets/img/logo.png" class="logo">
+        </div>
+      </div>
     </div>
   </div>
 </div>

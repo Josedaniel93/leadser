@@ -1,0 +1,115 @@
+<div class="container-fluid" id="calls">
+  <form [formGroup]="" class="h-100 row">
+    <div class="col-2 labels">
+      <div class="row align-content-center justify-content-center mt-2">
+        <div class="col-12 mt-3 form-group">
+          <div class="row align-content-center justify-content-center">
+            <label>Nombre<span class="required">:</span></label>
+          </div>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <div class="row align-content-center justify-content-center">
+            <label>Apellidos<span class="required">:</span></label>
+          </div>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <div class="row align-content-center justify-content-center">
+            <label>Dni<span class="required">:</span></label>
+          </div>
+        </div>
+        <div class="col-12 mt-3 form-group ">
+          <div class="row align-content-center justify-content-center">
+            <label>Direccion<span class="required">:</span></label>
+          </div>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <div class="row align-content-center justify-content-center">
+            <label>CP<span class="required">:</span></label>
+          </div>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <div class="row align-content-center justify-content-center">
+            <label>Fijo<span class="required">:</span></label>
+          </div>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <div class="row align-content-center justify-content-center">
+            <label>Movil<span class="required">:</span></label>
+          </div>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <div class="row align-content-center justify-content-center">
+            <label>Compañia actual<span class="required">:</span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-5 inputs mt" formGroupName="businessDataForm">
+      <div class="row align-content-center ">
+        <div class="col-12 mt-3 form-group">
+          <input type="text" class="form-control" formControlName="name" required>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <input type="text" class="form-control" formControlName="lastName" required>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <input type="text" class="form-control" formControlName="dni" required>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <input type="text" class="form-control" formControlName="adress" required>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <input type="text" class="form-control" formControlName="cp" required>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <input type="text" class="form-control" formControlName="phone" required>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <input type="text" class="form-control" formControlName="mobile" required>
+        </div>
+        <div class="col-12 mt-3 form-group">
+          <input type="text" class="form-control" formControlName="actualCompany" required>
+        </div>
+        <div class="col-12 mt-3 form-group justify-content-end align-content-center">
+          <div class="row  justify-content-end align-content-center">
+            <button type="button" class="btn btn-primary mr-3 mt-2">Enviar informacion</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-5 calls">
+      <div class="row">
+        <div class="col-8 ml-5 mt-5 border">
+          <div class="row align-content-center justify-content-center  mt-5">
+            <label>LLAMADA ACTIVA</label>
+          </div>
+          <div class="row align-content-center justify-content-center">
+            <label>Tiempo en llamada: 00:02:33</label>
+          </div>
+          <div class="row align-content-center justify-content-center mt-5">
+            <label>+34 666 666 666</label>
+          </div>
+          <div class="row align-content-center justify-content-center">
+            <i class="fas fa-volume-mute"></i>
+          </div>
+        </div>
+        <div class="col-8 ml-5 mt-5 border">
+          <div class="row align-content-center justify-content-center  mt-5">
+            <label>EMISION</label>
+          </div>
+          <div class="row align-content-center justify-content-center">
+            <label>Introduzca numero:</label>
+          </div>
+          <div class="row align-content-center justify-content-center mt-5">
+            <label><input type="text" class="form-control"></label>
+          </div>
+          <div class="row align-content-center justify-content-center mt-3">
+            <i class="fas fa-phone-slash mr-2"></i>
+            <i class="fas fa-phone"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

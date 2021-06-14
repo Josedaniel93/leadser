@@ -3,10 +3,10 @@
     <div class="vertical-menu">
       <div class="info">
         <a href="#" class="active" (click)="logOut()">Home</a>
-        <i class="fas fa-user" (click)="logOut()"><a href="#"></a></i>
-        <i class="far fa-chart-bar" (click)="logOut()"></i>
-        <i class="fas fa-phone-square-alt" (click)="logOut()"></i>
-        <i class="fas fa-cog" (click)="logOut()"></i>
+        <i *ngIf="route != 'admin'" class="fas fa-user" (click)="logOut()"><a href="#"></a></i>
+        <i *ngIf="route != 'admin'" class="far fa-chart-bar" (click)="logOut()"></i>
+        <i *ngIf="route != 'admin'" class="fas fa-phone-square-alt" (click)="logOut()"></i>
+        <i *ngIf="route != 'admin'" class="fas fa-cog" (click)="logOut()"></i>
       </div>
     </div>
     <div class="horizontal-menu ">

@@ -1,4 +1,5 @@
 
+
 import { Router, RouterStateSnapshot } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,23 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
   title: string;
+  route: string;
   urlSplit: string[]
 
   constructor(private router: Router) {
     this.title = "";
+
     this.urlSplit = this.splitUrl(router.routerState.snapshot.url);
   }
 
   ngOnInit(): void {
-
-    this.title = this.getRoute();
+    this.route = this.urlSplit[this.urlSplit.length - 1];
+    this.title = "Leadser" + this.getRoute();
   }
   getRoute() {
-    return "Leadser" + this.urlSplit[this.urlSplit.length - 1][0].toUpperCase() + this.urlSplit[this.urlSplit.length - 1].slice(1);
+    return this.urlSplit[this.urlSplit.length - 1][0].toUpperCase() + this.urlSplit[this.urlSplit.length - 1].slice(1);
   }
 
   logOut() {
-    this.router.navigate(["/login"])
+    this.router.navigate(["/login"]);
   }
 
   splitUrl(fullPath: string): string[] {

@@ -1,1 +1,8 @@
-<p>top-workers works!</p>
+<div id="max-users">
+  <app-header-with-select [actionCheckForData]="actionCheckForData" [title]="title"></app-header-with-select>
+  <div class="row">
+    <div class="col">
+      <app-donut-generic [data]="dataSource" [concept]="'Trabajadores'"></app-donut-generic>
+    </div>
+  </div>
+</div>

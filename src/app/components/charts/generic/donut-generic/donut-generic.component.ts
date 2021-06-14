@@ -1,6 +1,7 @@
+import { TopWorkersData } from './../../partners-business/top-workers/models/top-workersmodel';
 import { DecimalPipe } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
-import { UsersApp } from '../../app/app-widget-test/models/users-app.model';
+
 
 @Component({
   selector: 'app-donut-generic',
@@ -9,7 +10,7 @@ import { UsersApp } from '../../app/app-widget-test/models/users-app.model';
 })
 export class DonutGenericComponent implements OnInit {
 
-  @Input() data: UsersApp[]
+  @Input() data: TopWorkersData[]
   @Input() concept: string;
 
   //years: Iterable<string>;
@@ -31,7 +32,7 @@ export class DonutGenericComponent implements OnInit {
 
 
   getImagePath() {
-    return 'assets/images/ingresos.png';
+    return 'assets/img/user.png';
   }
 
 

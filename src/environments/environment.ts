@@ -7,9 +7,10 @@ export const environment = {
 
   API_URL: 'http://localhost:3000',
   URL: {
-    WORKERS: '/workers',
-    BUSINESS: '/business',
+    CREATEWORKER: '/workers/create',
+    CREATEBUSINESS: '/business/create',
     LOGIN: '/login',
+
   }
 
 

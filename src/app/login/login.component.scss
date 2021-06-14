@@ -1,99 +1,125 @@
+#main {
 
-
-#main{
-
-  .container-fluid{
+  .container-fluid {
     height: 100vh;
-    .expand{
+
+    .expand {
       height: 100%;
 
-      .main-log{
+      .main-log {
         background: #282672;
-        .form-title{
+
+        .form-title {
           padding: 20px;
           font-family: montserrat;
           color: white;
         }
 
-        .form-group{
+        .form-group {
           justify-content: center;
           margin-top: 120px;
 
-          .form-second-title{
+          .form-second-title {
             margin: 20px;
             font-family: montserrat;
             color: white;
             text-align: center;
           }
-          .form-item{
+
+          .form-item {
             margin: 10px 0px;
           }
-          .mail{
+
+          .mail {
             height: 64px;
             border: 1px solid #21DAD7;
             border-radius: 13px;
             background: #282672;
           }
-          .pass{
+
+          .pass {
             height: 64px;
             border: 1px solid #21DAD7;
             border-radius: 13px;
             background: #282672;
           }
-          .icon{
+
+          .icon {
             position: absolute;
             top: 20px;
             right: 40px;
             color: grey;
             font-size: 25px;
           }
-          .icon:hover{
+
+          .icon:hover {
             color: white;
           }
-          .form-remember{
+
+          .form-remember {
             display: inline-flex;
-            .remember-check{
+
+            .remember-check {
               width: 24px;
               height: 24px;
             }
-            .remember-text{
+
+            .remember-text {
               margin-left: 10px;
             }
           }
-          .form-button{
+
+          .form-button {
             text-align: center;
             margin: 30px 0px;
           }
-          .form-signup{
+
+          .form-signup {
             display: inline-flex;
             justify-content: center;
-            a{
+
+            a {
               color: #21DAD7;
             }
           }
         }
       }
-      .back-log{
+
+      .back-log {
         background: #1B1464;
+
+        .row {
+          height: 100vh;
+
+          .logo {
+            height: 300px;
+            width: 600px;
+          }
+        }
+
+
       }
-      p{
+
+      p {
         font-family: montserrat;
         color: white;
         margin: 0px;
       }
-      a{
+
+      a {
         font-family: montserrat;
         color: white;
         text-align: center;
       }
-      button{
+
+      button {
         width: 239px;
         height: 71px;
         box-shadow: 0px 8px 25px #16114B;
         border-radius: 23px;
         background: #21DAD7;
         font-family: montserrat;
-        color:  #1B1464;
+        color: #1B1464;
         font-size: 30px;
       }
 
@@ -104,5 +130,5 @@
     }
 
 
- }
+  }
 }
