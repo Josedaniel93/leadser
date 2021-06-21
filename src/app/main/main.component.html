@@ -2,11 +2,11 @@
   <div class="row">
     <div class="vertical-menu">
       <div class="info">
-        <a href="#" class="active" (click)="logOut()">Home</a>
-        <i *ngIf="route != 'admin'" class="fas fa-user" (click)="logOut()"><a href="#"></a></i>
-        <i *ngIf="route != 'admin'" class="far fa-chart-bar" (click)="logOut()"></i>
-        <i *ngIf="route != 'admin'" class="fas fa-phone-square-alt" (click)="logOut()"></i>
-        <i *ngIf="route != 'admin'" class="fas fa-cog" (click)="logOut()"></i>
+        <a href="#" class="active" (click)="goDashboard()">Home</a>
+        <i *ngIf="route != 'admin'" class="fas fa-user" (click)="goDashboard()"><a href="#"></a></i>
+        <i *ngIf="route != 'admin'" class="far fa-chart-bar" (click)="goDashboard()"></i>
+        <i *ngIf="route === 'workers'" class="fas fa-phone-square-alt" (click)="goCalls()"></i>
+        <i *ngIf="route === 'workers'" class="fas fa-desktop" (click)="goFormation()"></i>
       </div>
     </div>
     <div class="horizontal-menu ">

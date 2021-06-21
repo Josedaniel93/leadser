@@ -18,9 +18,10 @@ export class AdminComponent implements OnInit {
   generateWorkerUserForm: FormGroup;
   generateBusinessUserForm: FormGroup;
   login: CreateLogin;
-
+  showMsg: boolean;
   //On constructor we call services and other builders
   constructor(private formBuilder: FormBuilder, private adminService: AdminService, private router: Router) {
+    this.showMsg = false;
     this.action = "";
     this.options = ["createWorker", 'createBusiness']
   }

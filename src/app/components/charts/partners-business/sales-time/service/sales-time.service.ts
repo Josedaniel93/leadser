@@ -25,9 +25,9 @@ export class SalesTimeService {
       { date: "3-2019", total: 150 },
       { date: "4-2019", total: 220 },
       { date: "1-2020", total: 280 },
-      { date: "2-2020", total: 260 },
-      { date: "3-2020", total: 150 },
-      { date: "4-2020", total: 120 }
+      { date: "2-2020", total: 320 },
+      { date: "3-2020", total: 350 },
+      { date: "4-2020", total: 420 }
 
 
     ];

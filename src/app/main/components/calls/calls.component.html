@@ -1,5 +1,5 @@
 <div class="container-fluid" id="calls">
-  <form [formGroup]="" class="h-100 row">
+  <form [formGroup]="workerForm" class="h-100 row">
     <div class="col-2 labels">
       <div class="row align-content-center justify-content-center mt-2">
         <div class="col-12 mt-3 form-group">
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="col-5 inputs mt" formGroupName="businessDataForm">
+    <div class="col-5 inputs mt">
       <div class="row align-content-center ">
         <div class="col-12 mt-3 form-group">
           <input type="text" class="form-control" formControlName="name" required>

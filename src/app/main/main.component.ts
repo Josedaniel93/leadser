@@ -41,4 +41,16 @@ export class MainComponent implements OnInit {
     });
     return urlSplit;
   }
+
+  goDashboard() {
+    this.router.navigate(['/main/' + this.urlSplit[this.urlSplit.length - 1]]);
+  }
+  goCalls() {
+    this.router.navigate(['/main/calls']);
+  }
+  goFormation() {
+    this.router.navigate(['/main/formation']);
+  }
+
+
 }

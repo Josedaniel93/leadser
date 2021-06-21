@@ -6,12 +6,11 @@
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        Dropdown button
+        Saleccione Año
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" (onValueChanged)="checkForData($event)">
-        <a *ngFor="let option of options; index as i;" class="dropdown-item" href="#">{{options[i]}}</a>
+        <a *ngFor="let option of options; index as i;" class="dropdown-item">{{options[i]}}</a>
       </div>
     </div>
   </div>
-
 </div>

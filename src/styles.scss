@@ -1,11 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+// You can add global styles to this file, and also import other style files
 
-/* Importing Bootstrap SCSS file. */
+// Importing Bootstrap SCSS file.
 @import '~bootstrap/scss/bootstrap';
+// Importing fontawesome icons
 @import '~@fortawesome/fontawesome-free/css/all.css';
+// Importing dev extreme styles
 @import "node_modules/devextreme/scss/bundles/dx.common.scss";
 @import "node_modules/devextreme/scss/bundles/dx.light.scss";
 
+//Importing new font
 @font-face {
   font-family: montserrat;
   src: url('./assets/fonts/MontserratAlternates-ExtraBold.ttf');

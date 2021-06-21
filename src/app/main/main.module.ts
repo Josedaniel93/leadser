@@ -24,6 +24,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 
 
 @NgModule({
+  //All component used on MainModule
   declarations: [
     LineGenericComponent,
     DonutGenericComponent,
@@ -37,17 +38,18 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     CallsComponent,
     FormationComponent,
   ],
+  //when we import Main module we import all this modules to app
   imports: [
-    MainRoutingModule,
+    MainRoutingModule,//Module to generate troutes
     CommonModule,
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
-    DxSelectBoxModule,
+    DxSelectBoxModule,//All dx components are dev extreme components
     DxDropDownButtonModule,
     DxChartModule,
     DxPieChartModule,
-    YouTubePlayerModule,
+    YouTubePlayerModule,//Module to allow lists of videos from youtube
   ],
   providers: [],
   bootstrap: []

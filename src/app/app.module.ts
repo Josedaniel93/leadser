@@ -16,10 +16,12 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 
 
 @NgModule({
+  //On app module we declare all components we will call from here
   declarations: [
     AppComponent,
     LoginComponent,
   ],
+  //We import all modules we need
   imports: [
     RouterModule,
     BrowserModule,

@@ -29,7 +29,6 @@ export class NavigationService {
 
   getRoute() {
     return this.fromNavigation;
-
   }
 
 

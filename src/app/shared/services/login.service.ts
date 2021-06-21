@@ -18,4 +18,26 @@ export class LoginService {
   login(loginObject: Login) {
     return this.http.post<ResponseData>(`${environment.API_URL}${environment.URL.LOGIN}`, loginObject).toPromise().then(response => response);
   }
+
+  // login(email: string, password: string) {
+  //   this.http.post(this.uri + '/authenticate', {email: email,password: password})
+  //   .subscribe((resp: any) => {
+
+  //     this.router.navigate(['profile']);
+  //     localStorage.setItem('auth_token', resp.token);
+
+  //     })
+  //     );
+
+  //   }
+
+  logout() {
+    localStorage.removeItem('token');
+  }
+
+  public get logIn(): boolean {
+    return (localStorage.getItem('token') !== null);
+  }
+
+
 }
