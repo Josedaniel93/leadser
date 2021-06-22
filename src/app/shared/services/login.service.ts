@@ -19,8 +19,9 @@ export class LoginService {
 
   login(loginObject: Login) {
     const header = new HttpHeaders
-
-    header.set('Access-Control-Allow-Origin', '*')
+    header.set('Access-Control-Allow-Origin', '*');
+    header.set('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    header.set('Access-Control-Allow-Headers', 'Content-Type, Accept');
 
 
     return this.http.post<ResponseData>(`${environment.API_URL}${environment.URL.LOGIN}`, loginObject, { 'headers': header }).toPromise().then(response => response);
