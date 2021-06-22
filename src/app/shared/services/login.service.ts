@@ -1,8 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Login, ResponseData } from '../models/login.interface';
 import { environment } from 'src/environments/environment';
-
 @Injectable({
   providedIn: 'root',
 })
@@ -19,7 +18,12 @@ export class LoginService {
 
 
   login(loginObject: Login) {
-    return this.http.post<ResponseData>(`${environment.API_URL}${environment.URL.LOGIN}`, loginObject).toPromise().then(response => response);
+    const header = new HttpHeaders
+
+    header.set('Access-Control-Allow-Origin', '*')
+
+
+    return this.http.post<ResponseData>(`${environment.API_URL}${environment.URL.LOGIN}`, loginObject, { 'headers': header }).toPromise().then(response => response);
   }
 
   // login(email: string, password: string) {
