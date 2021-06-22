@@ -8,8 +8,9 @@
         aria-haspopup="true" aria-expanded="false">
         Saleccione Año
       </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" (onValueChanged)="checkForData($event)">
-        <a *ngFor="let option of options; index as i;" class="dropdown-item">{{options[i]}}</a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <button *ngFor="let option of options; index as i;" class="dropdown-item"
+          (click)="checkForData(options[i])">{{options[i]}}</button>
       </div>
     </div>
   </div>

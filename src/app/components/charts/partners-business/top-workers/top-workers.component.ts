@@ -27,9 +27,9 @@ export class TopWorkersComponent implements OnInit {
 
   }
 
-  checkForData(event: any) {
+  checkForData(data: any) {
 
-    this.topWorkersService.getData(event.value);
+    this.topWorkersService.getData(data);
 
   }
 }

@@ -24,9 +24,9 @@ export class SalesTimeComponent implements OnInit {
     this.checkForData({ value: "2020" });
   }
 
-  checkForData(event: any) {
+  checkForData(data: any) {
 
-    this.salesTimeService.getData(event.value);
+    this.salesTimeService.getData(data);
 
   }
 }
