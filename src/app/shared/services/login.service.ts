@@ -15,6 +15,9 @@ export class LoginService {
   //   }
   //   return false;
   // }
+
+
+
   login(loginObject: Login) {
     return this.http.post<ResponseData>(`${environment.API_URL}${environment.URL.LOGIN}`, loginObject).toPromise().then(response => response);
   }
