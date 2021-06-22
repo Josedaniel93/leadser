@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  API_URL: 'http://localhost:3000',
+  API_URL: 'http://leadser-back.herokuapp.com',
   URL: {
     CREATEWORKER: '/workers/create',
     CREATEBUSINESS: '/business/create',
